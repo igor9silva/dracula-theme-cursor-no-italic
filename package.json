@@ -1,0 +1,52 @@
+{
+  "name": "dracula-theme",
+  "version": "1.0.0",
+  "displayName": "Dracula Theme",
+  "homepage": "https://draculatheme.com",
+  "description": "A dark & light theme for many editors, shells, and more.",
+  "publisher": "dracula-theme",
+  "license": "MIT",
+  "scripts": {
+    "build": "node ./dev/scripts/build.js",
+    "lint": "node ./dev/scripts/lint.js",
+    "package": "vsce package -o ./dist/dracula-theme.vsix",
+    "format": "biome format --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dracula/cursor"
+  },
+  "bugs": {
+    "url": "https://github.com/dracula/cursor/issues",
+    "email": "support@draculatheme.com"
+  },
+  "engines": {
+    "vscode": "^1.13.0"
+  },
+  "categories": ["Themes"],
+  "keywords": ["dracula", "alucard", "dark", "light", "theme", "color-theme"],
+  "icon": "dev/assets/icon.png",
+  "galleryBanner": {
+    "color": "#BD93F9",
+    "theme": "dark"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Dracula Theme (Classic)",
+        "uiTheme": "vs-dark",
+        "path": "./dev/theme/classic.json"
+      },
+      {
+        "label": "Dracula Theme (Alucard)",
+        "uiTheme": "vs",
+        "path": "./dev/theme/alucard.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "js-yaml": "3.13.1",
+    "vsce": "^2.15.0"
+  }
+}
