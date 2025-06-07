@@ -1,3 +1,5 @@
+Note: this is a fork that removes *italic* styling.
+
 # Dracula for [Cursor](https://cursor.com)
 
 > A dark & light theme for [Cursor](https://cursor.com).

@@ -935,10 +935,6 @@ tokenColors:
 # =============================================================================
 
   - scope:
-    - emphasis
-    settings:
-      fontStyle: italic
-  - scope:
     - strong
     settings:
       fontStyle: bold
@@ -974,12 +970,12 @@ tokenColors:
     - invalid
     settings:
       foreground: *Red
-      fontStyle: underline italic
+      fontStyle: underline
   - scope:
     - invalid.deprecated
     settings:
       foreground: *Foreground
-      fontStyle: underline italic
+      fontStyle: underline
   - scope:
     - entity.name.filename
     settings:
@@ -1017,7 +1013,6 @@ tokenColors:
     - markup.italic
     settings:
       foreground: *Yellow
-      fontStyle: italic
 
   - name: Markup strikethrough
     scope:
@@ -1063,7 +1058,6 @@ tokenColors:
     - markup.quote
     settings:
       foreground: *Yellow
-      fontStyle: italic
 
   - name: Horizontal rule (prose)
     scope:
@@ -1128,13 +1122,11 @@ tokenColors:
     - variable.parameter.function.language.special                              # Special words as parameters
     settings:
       foreground: *Purple
-      fontStyle: italic
 
   - name: Inherited classes
     scope:
     - entity.other.inherited-class
     settings:
-      fontStyle: italic
       foreground: *Cyan
 
 # =============================================================================
@@ -1163,7 +1155,6 @@ tokenColors:
     - comment.block.documentation entity.name.type
     settings:
       foreground: *Cyan
-      fontStyle: italic
 
   - name: JSDoc-style type brackets
     scope:
@@ -1176,7 +1167,6 @@ tokenColors:
     - comment.block.documentation variable
     settings:
       foreground: *Orange
-      fontStyle: italic
 
 # =============================================================================
 # Constants
@@ -1218,7 +1208,6 @@ tokenColors:
     - entity.other.attribute-name
     settings:
       foreground: *Green
-      fontStyle: italic
 
 # =============================================================================
 # Functions/Methods
@@ -1247,7 +1236,6 @@ tokenColors:
     - meta.selectionset.graphql meta.arguments.graphql variable.arguments.graphql
     - variable.parameter
     settings:
-      fontStyle: italic
       foreground: *Orange
 
   - name: Decorators
@@ -1256,7 +1244,6 @@ tokenColors:
     - meta.decorator variable.other.property
     settings:
       foreground: *Green
-      fontStyle: italic
 
   - name: Decorator Objects
     scope:
@@ -1296,7 +1283,6 @@ tokenColors:
     scope:
     - support
     settings:
-      fontStyle: italic
       foreground: *Cyan
 
   - name: Built-in magic functions and constants
@@ -1414,7 +1400,7 @@ tokenColors:
     scope:
     - variable.other.alias.yaml
     settings:
-      fontStyle: italic underline
+      fontStyle: underline
       foreground: *Green
 
 # =============================================================================
@@ -1455,7 +1441,6 @@ tokenColors:
     - storage.type.php
     - variable.annotation
     settings:
-      fontStyle: italic
       foreground: *Cyan
 
   - name: Generics, templates, and mapped type declarations
@@ -1572,7 +1557,6 @@ tokenColors:
     - meta.object-binding-pattern-variable variable.object.property             # Object destructuring property
     - meta.variable.assignment.destructured.object.coffee variable              # Object destructuring property (coffeescript)
     settings:
-      fontStyle: italic
       foreground: *Orange
 
   - name: Destructuring / aliasing variable name (RHS)
